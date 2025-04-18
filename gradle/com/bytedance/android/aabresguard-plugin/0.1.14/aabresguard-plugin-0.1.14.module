@@ -1,0 +1,136 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.bytedance.android",
+    "module": "aabresguard-plugin",
+    "version": "0.1.14",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.bytedance.android",
+          "module": "aabresguard-core",
+          "version": {
+            "requires": "0.1.14"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            },
+            {
+              "group": "com.google.guava",
+              "module": "guava"
+            },
+            {
+              "group": "com.android.tools.build",
+              "module": "gradle"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "aabresguard-plugin-0.1.14.jar",
+          "url": "aabresguard-plugin-0.1.14.jar",
+          "size": 19554,
+          "sha512": "c2d3a72b9cde8b416f950621ce10b049aa106cac9aa0ce5e7d774ce579f3542712274887ac5e626a94ebe44fd01f4bb3581fe9af1f32876bb681e95ded19219d",
+          "sha256": "1776d3df24fd3dbb22988f1f794a2399ed378031b52fdd9bf0ec5d8b7c05940b",
+          "sha1": "889cd04f5e385c013b601ab66d28c0f53dba1a31",
+          "md5": "9c5f8f482ab56ab940730e796891afe7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "2.0.21"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-gradle-plugin",
+          "version": {
+            "requires": "2.0.21"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            }
+          ]
+        },
+        {
+          "group": "com.bytedance.android",
+          "module": "aabresguard-core",
+          "version": {
+            "requires": "0.1.14"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            },
+            {
+              "group": "com.google.guava",
+              "module": "guava"
+            },
+            {
+              "group": "com.android.tools.build",
+              "module": "gradle"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "aabresguard-plugin-0.1.14.jar",
+          "url": "aabresguard-plugin-0.1.14.jar",
+          "size": 19554,
+          "sha512": "c2d3a72b9cde8b416f950621ce10b049aa106cac9aa0ce5e7d774ce579f3542712274887ac5e626a94ebe44fd01f4bb3581fe9af1f32876bb681e95ded19219d",
+          "sha256": "1776d3df24fd3dbb22988f1f794a2399ed378031b52fdd9bf0ec5d8b7c05940b",
+          "sha1": "889cd04f5e385c013b601ab66d28c0f53dba1a31",
+          "md5": "9c5f8f482ab56ab940730e796891afe7"
+        }
+      ]
+    }
+  ]
+}
