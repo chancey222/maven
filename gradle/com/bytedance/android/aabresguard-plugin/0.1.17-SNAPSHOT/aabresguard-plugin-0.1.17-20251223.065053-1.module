@@ -1,0 +1,136 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.bytedance.android",
+    "module": "aabresguard-plugin",
+    "version": "0.1.17-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.bytedance.android",
+          "module": "aabresguard-core",
+          "version": {
+            "requires": "0.1.17-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            },
+            {
+              "group": "com.google.guava",
+              "module": "guava"
+            },
+            {
+              "group": "com.android.tools.build",
+              "module": "gradle"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "aabresguard-plugin-0.1.17-SNAPSHOT.jar",
+          "url": "aabresguard-plugin-0.1.17-SNAPSHOT.jar",
+          "size": 20039,
+          "sha512": "10ac3a4e05df55db43fc87fd0c4c7617ab83d7374977b67f06eda09f173d2c14b11d21b8fff52aa83f4941fee266cfff0e635151c79f60851eeb5e08f211830a",
+          "sha256": "fdd19762f74053778bf192575ecf7236001116f60187eb628eb826da08db4b65",
+          "sha1": "0b47c58e26fad11ea8e61f3732533fc1533fb9cb",
+          "md5": "78bd920a19e973eb095a28c39d93dcef"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk7",
+          "version": {
+            "requires": "2.0.21"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-gradle-plugin",
+          "version": {
+            "requires": "2.0.21"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            }
+          ]
+        },
+        {
+          "group": "com.bytedance.android",
+          "module": "aabresguard-core",
+          "version": {
+            "requires": "0.1.17-SNAPSHOT"
+          },
+          "excludes": [
+            {
+              "group": "com.android.tools.build",
+              "module": "bundletool"
+            },
+            {
+              "group": "com.google.guava",
+              "module": "guava"
+            },
+            {
+              "group": "com.android.tools.build",
+              "module": "gradle"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "aabresguard-plugin-0.1.17-SNAPSHOT.jar",
+          "url": "aabresguard-plugin-0.1.17-SNAPSHOT.jar",
+          "size": 20039,
+          "sha512": "10ac3a4e05df55db43fc87fd0c4c7617ab83d7374977b67f06eda09f173d2c14b11d21b8fff52aa83f4941fee266cfff0e635151c79f60851eeb5e08f211830a",
+          "sha256": "fdd19762f74053778bf192575ecf7236001116f60187eb628eb826da08db4b65",
+          "sha1": "0b47c58e26fad11ea8e61f3732533fc1533fb9cb",
+          "md5": "78bd920a19e973eb095a28c39d93dcef"
+        }
+      ]
+    }
+  ]
+}
