@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.string.plugin",
+    "module": "stringblur",
+    "version": "1.1.7",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "stringblur-1.1.7.jar",
+          "url": "stringblur-1.1.7.jar",
+          "size": 52832,
+          "sha512": "92d969dc058ca24c835683e5ebf6c15a8e9ab1cae8e4a2902bdbd9acc427ac57e7c36248a70d35060475abbca80e183822bb8d85252bd1023429ae36d5513005",
+          "sha256": "5383841b32171681b2fcb38864431a1012a66f9fc6c1812e261bf70c258a13aa",
+          "sha1": "670cbda6d85275fa94a84888c10e07ec4102b347",
+          "md5": "27c8e0970e9f79d1c1e65ae4c66f9edc"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.9.1"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "javawriter",
+          "version": {
+            "requires": "2.5.1"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.4.0"
+          }
+        },
+        {
+          "group": "com.android.string.plugin",
+          "module": "common",
+          "version": {
+            "requires": "1.1.7"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "stringblur-1.1.7.jar",
+          "url": "stringblur-1.1.7.jar",
+          "size": 52832,
+          "sha512": "92d969dc058ca24c835683e5ebf6c15a8e9ab1cae8e4a2902bdbd9acc427ac57e7c36248a70d35060475abbca80e183822bb8d85252bd1023429ae36d5513005",
+          "sha256": "5383841b32171681b2fcb38864431a1012a66f9fc6c1812e261bf70c258a13aa",
+          "sha1": "670cbda6d85275fa94a84888c10e07ec4102b347",
+          "md5": "27c8e0970e9f79d1c1e65ae4c66f9edc"
+        }
+      ]
+    }
+  ]
+}
